@@ -68,6 +68,7 @@
       record(event) {
         if (this.xy.length < this.text.length) {
           let uuid = window.cookie.get('uuid');
+          let bxccAntid = window.cookie.get('bxcc_antid');
           this.xy.push(event.offsetX + "," + event.offsetY);
           if (this.xy.length == this.text.length) {
             let captchainfo = [
@@ -82,6 +83,7 @@
                 do: "check",
                 info: captchainfo,
                 uuid: uuid,
+                bxcc_antid: bxccAntid,
               })
             ).then(res => {
               let _rse = res.data;
