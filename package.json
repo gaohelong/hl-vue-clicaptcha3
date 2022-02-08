@@ -1,0 +1,53 @@
+{
+  "name": "hl-vue-clicaptcha3",
+  "version": "0.2.3",
+  "main": "./dist/clicaptcha.umd.min.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name clicaptcha ./src/components/index.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "core-js": "^3.6.5",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2",
+    "vue": "^2.6.12",
+    "vue-cookies": "^1.7.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.4",
+    "@vue/cli-plugin-eslint": "^4.5.4",
+    "@vue/cli-service": "^4.5.4",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^7.8.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "__npminstall_done": "Mon Feb 07 2022 14:12:38 GMT+0800 (中国标准时间)",
+  "_from": "hl-vue-clicaptcha3@0.2.3",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/gaohelong/hl-vue-clicaptcha3"
+  }
+}
