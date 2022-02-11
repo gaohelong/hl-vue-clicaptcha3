@@ -1,6 +1,6 @@
 {
   "name": "hl-vue-clicaptcha3",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "main": "./dist/clicaptcha.umd.min.js",
   "license": "MIT",
   "scripts": {
@@ -45,7 +45,7 @@
     "last 2 versions"
   ],
   "__npminstall_done": "Mon Feb 07 2022 14:12:38 GMT+0800 (中国标准时间)",
-  "_from": "hl-vue-clicaptcha3@0.2.4",
+  "_from": "hl-vue-clicaptcha3@0.2.5",
   "repository": {
     "type" : "git",
     "url" : "https://github.com/gaohelong/hl-vue-clicaptcha3"

@@ -55,14 +55,17 @@
         axios.get(`${this.AsyncUrl}`).then((res) => {
           let _res = res.data;
           if (_res.code == 0) {
-            window.cookie.set('clicaptcha_text', _res.data);
+            // window.cookie.set('clicaptcha_text', _res.data);
+            window.localStorage.setItem('clicaptcha_text', _res.data);
             this.setTitle();
           }
         });
       },
       setTitle() {
+        // this.text = window.cookie.get("clicaptcha_text").split(",");
+        let text = window.localStorage.getItem('clicaptcha_text') || '';
+        this.text = text.split(",");
         this.tip = "";
-        this.text = window.cookie.get("clicaptcha_text").split(",");
         this.xy = [];
       },
       record(event) {
